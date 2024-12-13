@@ -75,15 +75,82 @@ a:visited {
 }
 
 .body-text {
-    position: absolute; 
-    font-size: 1.5em; 
-    top: 13%;           
-    left: 40%; 
-    width: 50%;              
-    color: white;       
-    line-height: 1.5;   
+    position: absolute;
+    font-size: 1.3em;
+    top: 13%;
+    left: 40%;
+    width: 50%;
+    color: white;
+    line-height: 1.5;
 }
 
 .space-text {
     margin-top: 3%;
+}
+
+.form-section {
+    position: absolute; 
+    font-size: 1.3em;
+    top: 35%;
+    left: 40%;
+    width: 50%;
+    color: white;
+    line-height: 1.5;
+}
+
+.form-text {
+    color: #FD0263;
+    margin-bottom: 3%;
+}
+
+.signup-form {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1.5rem; 
+}
+
+.signup-form div {
+    flex: 1 1 calc(50% - 1.5rem); 
+    display: flex;
+    flex-direction: column; 
+    min-width: 200px; 
+}
+
+.signup-form label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FD0263;
+    margin-bottom: 0.5rem; 
+}
+
+.signup-form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 85%; 
+}
+
+.signup-form button {
+    background-color: #FD0263;
+    color: white;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start; 
+    width: 25%; 
+    margin-top: 1.5rem; 
+}
+
+.signup-form button:hover {
+    background-color: #be024a;
+}
+
+.signup-form .log-in {
+    margin-top: 2%; 
+    width: 100%; 
+    font-size: 1.1rem;
 }
