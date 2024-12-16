@@ -3,6 +3,14 @@
     src: url('Norse-Bold.otf');
 }
 
+:root {
+    --placement-left: 45%;
+    --red-color: #FD0263;
+    --second-red: #be024a;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -18,12 +26,12 @@ body, html {
 }
 
 a {
-    color: #FD0263; 
+    color: var(--red-color); 
     text-decoration: none; 
 }
 
 a:visited {
-    color: #be024a; 
+    color: var(--second-red); 
 }
   
 .image-section {
@@ -78,7 +86,7 @@ a:visited {
     position: absolute;
     font-size: 1.3em;
     top: 13%;
-    left: 40%;
+    left : var(--placement-left);
     width: 50%;
     color: white;
     line-height: 1.5;
@@ -92,14 +100,14 @@ a:visited {
     position: absolute; 
     font-size: 1.3em;
     top: 35%;
-    left: 40%;
+    left: var(--placement-left);
     width: 50%;
     color: white;
     line-height: 1.5;
 }
 
 .form-text {
-    color: #FD0263;
+    color: var(--red-color);
     margin-bottom: 3%;
 }
 
@@ -120,7 +128,7 @@ a:visited {
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: #FD0263;
+    color: var(--red-color);
     margin-bottom: 0.5rem; 
 }
 
@@ -133,7 +141,7 @@ a:visited {
 }
 
 .signup-form button {
-    background-color: #FD0263;
+    background-color: var(--red-color);
     color: white;
     padding: 0.8rem;
     font-size: 1rem;
@@ -146,7 +154,7 @@ a:visited {
 }
 
 .signup-form button:hover {
-    background-color: #be024a;
+    background-color: var(--second-red);
 }
 
 .signup-form .log-in {
